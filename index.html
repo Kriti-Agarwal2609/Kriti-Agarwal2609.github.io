@@ -185,6 +185,7 @@
     .tab-panel.active { display: block; }
 
     .projects-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 22px; }
+    .projects-grid-2col { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
     .project-card {
       background: var(--surface); border: 1.5px solid var(--border);
       border-radius: var(--radius); overflow: hidden;
@@ -266,7 +267,7 @@
       #hero { padding: 90px 24px 48px; }
       .hero-grid, .about-grid, .resume-grid { grid-template-columns: 1fr; gap: 40px; }
       .hero-visual { display: none; }
-      .projects-grid { grid-template-columns: 1fr; }
+      .projects-grid, .projects-grid-2col { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -560,12 +561,32 @@
           </div>
         </div>
 
+        <div class="project-card">
+          <div class="project-thumb" style="background:#e8f4fd;">
+            <svg viewBox="0 0 56 56" fill="none" stroke="#0277bd" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="6" y="12" width="44" height="30" rx="3"/>
+              <polygon points="23,22 23,34 35,28" fill="#0277bd" stroke="none"/>
+              <line x1="18" y1="46" x2="38" y2="46"/>
+              <line x1="28" y1="42" x2="28" y2="46"/>
+            </svg>
+          </div>
+          <div class="project-body">
+            <div class="project-type" style="color:#0277bd;">Video Scripts</div>
+            <h3>Product Videos &amp; Walkthroughs</h3>
+            <p>End-to-end video scripts for product walkthroughs, feature demos, and onboarding tutorials — designed to simplify complex workflows visually.</p>
+            <div class="project-links">
+              <a href="https://support.inmobi.com/choice/getting-started-cmp/using-portal-no-code/protect-your-properties/protect-a-site#basic-details" target="_blank" class="project-link" style="color:#0277bd;">Protect a Site — CMP Walkthrough →</a>
+              <a href="https://www.youtube.com/watch?v=r_AHDKyjjdQ" target="_blank" class="project-link" style="color:#0277bd;">Product Demo Video →</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
 
     <!-- Content Writing tab -->
     <div class="tab-panel" id="panel-cw">
-      <div class="projects-grid">
+      <div class="projects-grid-2col">
 
         <div class="project-card">
           <div class="project-thumb" style="background:#e8f5e9;">
@@ -747,7 +768,7 @@
             <p>Download full resume</p>
             <span>PDF · Updated March 2025</span>
           </div>
-          <a href="CV-KRITI_AGARWAL.pdf" target="_blank" class="btn-primary">Download PDF ↓</a>
+          <a href="CV-KRITI%20AGARWAL.pdf" target="_blank" class="btn-primary">Download PDF ↓</a>
         </div>
       </div>
     </div>
@@ -772,12 +793,6 @@
           <svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="4"/><line x1="7" y1="10" x2="7" y2="17"/><circle cx="7" cy="7" r="0.5" fill="rgba(255,255,255,0.7)" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/><path d="M11 10v7m0-3.5a3 3 0 0 1 6 0V17"/></svg>
         </span>
         linkedin.com/in/kriti-agarwal-916838100
-      </a>
-      <a href="https://github.com/kritiagarwal" target="_blank" class="contact-link">
-        <span class="contact-link-icon">
-          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-        </span>
-        github.com/kritiagarwal
       </a>
     </div>
   </div>
